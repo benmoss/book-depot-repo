@@ -7,3 +7,5 @@ target
 .DS_Store
 .lein-deps-sum
 .lein-plugins
+resources/public/js
+.lein-cljsbuild-compiler*

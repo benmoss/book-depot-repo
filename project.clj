@@ -7,10 +7,11 @@
                            [org.clojure/java.jdbc "0.2.3"]
                            [org.xerial/sqlite-jdbc "3.7.2"]]
             :plugins [[lein-cljsbuild "0.2.8"]]
+            :hooks [leiningen.cljsbuild]
             :cljsbuild {
                         :builds [{
                                   :source-path "src/cljs"
                                   :compiler {
                                              :output-to "resources/public/js/main.js"
-                                             :optimizations :advanced}}]}
+                                             :optimizations :advanced }}]}
             :main books.server)
